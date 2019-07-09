@@ -8,6 +8,16 @@ function isInRange(startNumber, endNumber) {
 
 }
 
-module.exports = isSmallerOrEqual;
-module.exports = isInRange;
+function generateSingleMultiplication(factor1, factor2){
+    return factor1  + ' x ' + factor2 + ' = ' + factor1*factor2;
+}
 
+
+// module.exports = {
+//     isSmallerOrEqual:isSmallerOrEqual,
+//     isInRange:isInRange,
+//     generateSingleMultiplication:generateSingleMultiplication
+// }
+exports.isSmallerOrEqual = isSmallerOrEqual
+exports.isInRange = isInRange
+exports.generateSingleMultiplication = generateSingleMultiplication
